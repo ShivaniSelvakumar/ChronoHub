@@ -1,0 +1,307 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color:rgb(245,245,245);
+}
+
+header{
+    background-color:rgb(108,59,255);
+    color: white;
+    padding: 15px 25px;
+    text-align:center;
+}
+
+.header-text h1{
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header-text p{
+    margin-top: 4px;
+    font-size: 14px;
+    opacity: 0.85;
+    font-style: italic;
+}
+
+
+
+
+
+.container{
+    display:flex;
+    height:calc(100vh - 70px);
+}
+
+
+nav{
+    width:230px;
+    background-color:rgb(30,30,46);
+    padding:18px;
+}
+
+
+
+button{
+    width:100%;
+    padding:14px;
+    margin-bottom:12px;
+
+    background-color:rgb(79,142,247);
+    color:white;
+
+    border:none;
+    border-radius:10px;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background-color:rgb(58,115,217);
+    transform:scale(1.03);
+}
+
+
+main{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    background-color:rgb(245,245,245);
+}
+
+
+h2{
+    color:rgb(108,59,255);
+    font-size:38px;
+    margin-bottom:25px;
+}
+
+#time{
+    font-size:70px;
+    font-weight:bold;
+    color:rgb(34,34,34);
+}
+
+#date{
+    margin-top:18px;
+    font-size:22px;
+    color:rgb(110,110,110);
+}
+#stopwatch-display{
+    font-size:55px;
+    padding:4px;
+    margin:4px;
+}
+#timer-input,#city{
+    display:flex;
+    justify-content:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:4px;
+    margin:8px;
+
+}
+#timer-display{
+    display:block;
+    font-size:55px ;
+    padding:4px;
+    margin:4px;
+}
+.controls{
+    display:flex;
+    gap:15px;
+}
+
+    
+#world-time{
+    font-size: 55px;
+    padding:6px;
+    margin:4px;
+    font-family:Consolas,"Courier New",monospace;
+    font-weight:bold;
+}
+#location{
+    font-size:30px;
+    margin:6px;
+
+}
+/* ---------- DEFAULT ---------- */
+
+.default-theme{
+    background-color: rgb(245,245,245);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.default-theme header{
+    background-color: rgb(108,59,255);
+}
+
+.default-theme nav{
+    background-color: rgb(30,30,46);
+}
+
+.default-theme main{
+    background-color: rgb(245,245,245);
+}
+
+.default-theme h2{
+    color: rgb(108,59,255);
+}
+
+.default-theme #time,
+.default-theme #stopwatch-display,
+.default-theme #timer-display,
+.default-theme #world-time{
+    color: rgb(34,34,34);
+}
+
+.default-theme #date,
+.default-theme #location{
+    color: rgb(110,110,110);
+}
+
+
+/* ---------- DARK ---------- */
+
+.dark-theme{
+    background-color:#121212;
+    font-family:"Courier New", monospace;
+}
+
+.dark-theme header{
+    background:#000;
+}
+
+.dark-theme nav{
+    background:#1e1e1e;
+}
+
+.dark-theme main{
+    background:#121212;
+}
+
+.dark-theme h2,
+.dark-theme #time,
+.dark-theme #date,
+.dark-theme #stopwatch-display,
+.dark-theme #timer-display,
+.dark-theme #world-time,
+.dark-theme #location{
+    color:white;
+}
+
+
+/* ---------- OCEAN ---------- */
+
+.ocean-theme{
+    background:#0B132B;
+    font-family:"Trebuchet MS", sans-serif;
+}
+
+.ocean-theme header{
+    background:#1C2541;
+}
+
+.ocean-theme nav{
+    background:#3A506B;
+}
+
+.ocean-theme main{
+    background:#0B132B;
+}
+
+.ocean-theme h2,
+.ocean-theme #time,
+.ocean-theme #date,
+.ocean-theme #stopwatch-display,
+.ocean-theme #timer-display,
+.ocean-theme #world-time,
+.ocean-theme #location{
+    color:#5BC0EB;
+}
+
+
+/* ---------- LAVENDER ---------- */
+
+.lavender-theme{
+    background:#F3E8FF;
+    font-family:Georgia, serif;
+}
+
+.lavender-theme header{
+    background:#8B5CF6;
+}
+
+.lavender-theme nav{
+    background:#C4B5FD;
+}
+
+.lavender-theme main{
+    background:#F3E8FF;
+}
+
+.lavender-theme h2,
+.lavender-theme #time,
+.lavender-theme #date,
+.lavender-theme #stopwatch-display,
+.lavender-theme #timer-display,
+.lavender-theme #world-time,
+.lavender-theme #location{
+    color:#5B21B6;
+}
+.default-theme button,.dark-theme button,.ocean-theme button,.lavender-theme button{
+    width:200px;
+}
+.default-theme button{
+    background-color: rgb(79,142,247);
+    color: white;
+}
+
+.default-theme button:hover{
+    background-color: rgb(58,115,217);
+}
+.dark-theme button{
+    background-color:#3A86FF;
+    color:white;
+}
+
+.dark-theme button:hover{
+    background-color:#2563EB;
+}
+.ocean-theme button{
+    background-color:#5BC0EB;
+    color:#0B132B;
+}
+
+.ocean-theme button:hover{
+    background-color:#3AAFD9;
+}
+.lavender-theme button{
+    background-color:#8B5CF6;
+    color:white;
+}
+
+.lavender-theme button:hover{
+    background-color:#7C3AED;
+}
+body,
+header,
+nav,
+main,
+button{
+    transition:0.4s;
+}
