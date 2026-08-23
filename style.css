@@ -305,3 +305,152 @@ main,
 button{
     transition:0.4s;
 }
+/* ============================= */
+/* 📱 MOBILE RESPONSIVE DESIGN  */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 12px 10px;
+    }
+
+    .header-text h1 {
+        font-size: 25px;
+    }
+
+    .header-text p {
+        font-size: 12px;
+    }
+
+    /* Change sidebar from vertical to horizontal */
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: calc(100vh - 70px);
+    }
+
+    nav {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    /* Override the 200px button width */
+    .default-theme button,
+    .dark-theme button,
+    .ocean-theme button,
+    .lavender-theme button {
+        width: auto;
+        flex: 1 1 130px;
+        max-width: 160px;
+        padding: 10px 8px;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    main {
+        width: 100%;
+        min-height: calc(100vh - 160px);
+        padding: 25px 10px;
+        text-align: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    h2 {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+
+    main p {
+        font-size: 14px;
+    }
+
+    #time {
+        font-size: 45px;
+    }
+
+    #date {
+        font-size: 17px;
+        margin-top: 12px;
+    }
+
+    #stopwatch-display,
+    #timer-display,
+    #world-time {
+        font-size: 40px;
+    }
+
+    #location {
+        font-size: 22px;
+    }
+
+    .controls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .controls button {
+        flex: 0 1 120px;
+        width: 120px;
+    }
+
+    #timer-input,
+    #city {
+        max-width: 250px;
+        width: 80%;
+        margin: 8px auto;
+    }
+}
+
+
+/* 📱 Very small phones */
+
+@media (max-width: 400px) {
+
+    .header-text h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        padding: 8px;
+        gap: 6px;
+    }
+
+    .default-theme button,
+    .dark-theme button,
+    .ocean-theme button,
+    .lavender-theme button {
+        flex: 1 1 110px;
+        max-width: 140px;
+        font-size: 13px;
+        padding: 9px 5px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #time {
+        font-size: 38px;
+    }
+
+    #stopwatch-display,
+    #timer-display,
+    #world-time {
+        font-size: 34px;
+    }
+}
